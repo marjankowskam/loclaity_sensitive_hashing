@@ -30,8 +30,9 @@ func ShowExampleSimilarities(dummyHostnames []string) {
 		})
 	}
 
-	firstItem := dataset[0].mh
-	fmt.Printf("The hostname is: %s\n", dataset[0].hostname)
+	randomIndex := rand.Intn(len(dummyHostnames))
+	firstItem := dataset[randomIndex].mh
+	fmt.Printf("The hostname is: %s\n", dataset[randomIndex].hostname)
 
 	sort.Sort(BySimilarity{data: dataset, mainElement: firstItem})
 

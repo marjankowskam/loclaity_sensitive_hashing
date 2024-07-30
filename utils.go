@@ -1,6 +1,8 @@
 package main
 
 import (
+	"math/rand"
+
 	"github.com/shawnohare/go-minhash"
 )
 
@@ -34,4 +36,13 @@ func (b BySimilarity) Swap(i, j int) {
 
 func (b BySimilarity) Less(i, j int) bool {
 	return b.mainElement.Similarity(b.data[i].mh) > b.mainElement.Similarity(b.data[j].mh)
+}
+
+func GetRandomString(num int) string {
+	charset := "abcdefghijklmnopqrstuvwxyz0123456789"
+	word := ""
+	for i := 0; i < num; i++ {
+		word += string(charset[rand.Intn(len(charset))])
+	}
+	return word
 }

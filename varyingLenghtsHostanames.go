@@ -10,3 +10,14 @@ func GetVaryingLenghtSimpleHostnames(num int) []string {
 
 	return hostnames
 }
+
+func GetVaryingLenghtHostnames(num int) []string {
+	baseName := GetRandomString(num)
+
+	hostnames := []string{}
+	for i := 0; i < num; i++ {
+		hostnames = append(hostnames, baseName[:(i+1)])
+	}
+
+	return hostnames
+}

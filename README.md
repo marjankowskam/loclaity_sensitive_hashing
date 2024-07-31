@@ -8,3 +8,6 @@ Other files include funcitonalities such as:
 * have functionalities to perturb these
 * plot the similarity between perturbed strings (this is done using Python and setting up a python environment may be necessary)
 * compare how accurately LSH approximates the Jacardi Similarity ( i.e. size of set intersection / size of set unition)
+
+
+All the experiments are run from the main.go file.

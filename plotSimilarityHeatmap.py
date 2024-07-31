@@ -5,6 +5,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
+grayscale = True
+cmap = 'gray' if grayscale else 'viridis'
+
 # Read the CSV file into a DataFrame
 df = pd.read_csv('similarity_array.csv')
 
@@ -17,7 +21,7 @@ print('Hello')
 plt.figure(figsize=(10, 8))
 
 show_numbers = len(data) > 1000
-sns_plot = sns.heatmap(data, annot=show_numbers, cmap='viridis')
+sns_plot = sns.heatmap(data, annot=show_numbers, cmap=cmap)
 plt.title('Heatmap of CSV Data')
 plt.show()
 #plt.savefig()

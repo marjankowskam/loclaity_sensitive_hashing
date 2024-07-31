@@ -8,6 +8,7 @@ import (
 	"strings"
 )
 
+// Very naive random hostnames
 func GetRandomHostnames(num int) []string {
 	hostnames := []string{}
 	words := []string{"form", "eventsrdftyguh", "love", "oldrdftyg", "johndfgh", "johnny", "main", "call", "hours", "image"}
@@ -18,8 +19,8 @@ func GetRandomHostnames(num int) []string {
 	return hostnames
 }
 
+// Writes out similarities of one hostname to all the other
 func ShowExampleSimilarities(dummyHostnames []string) {
-
 	for i := 0; i < len(dummyHostnames); i++ {
 		hostname := dummyHostnames[i]
 		mh := StringToMinHash(hostname)

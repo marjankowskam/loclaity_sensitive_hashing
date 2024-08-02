@@ -1,6 +1,6 @@
 # Similarity Hashing
 
-The MinHash signature and similarities are calculated using the minhash golang library.
+The MinHash signature and similarities are calculated using the [minhash golang package](https://pkg.go.dev/github.com/shawnohare/go-minhash#section-sourcefiles).
 The initial parts of sharding (slicing the input into pairs of characters) are done in the utilis.go file.
 
 Other files include functionalities such as:

@@ -1,4 +1,4 @@
-# loclaity_sensitive_hashing
+# Similarity Hashing
 
 The MinHash signature and similarities are calculated using the minhash golang library.
 The initial parts of sharding (slicing the input into pairs of characters) are done in the utilis.go file.

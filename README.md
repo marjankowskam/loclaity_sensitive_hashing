@@ -11,3 +11,9 @@ Other files include funcitonalities such as:
 
 
 All the experiments are run from the main.go file.
+
+To install the required packages
+
+    ```bash
+    pip install -r requirements.txt
+    ```

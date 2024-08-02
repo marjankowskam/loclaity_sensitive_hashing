@@ -99,7 +99,7 @@ func average(slice []float64) float64 {
 }
 
 func PlotLines(maxima []float64, average []float64, minima []float64) {
-	file, _ := os.Create("similarity_array_lineplot.csv")
+	file, _ := os.Create("data/similarity_array_lineplot.csv")
 
 	writer := csv.NewWriter(file)
 

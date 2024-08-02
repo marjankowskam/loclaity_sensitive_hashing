@@ -20,7 +20,7 @@ def load_arrays_from_csv(filename):
 
     return array1, array2, array3
 
-maxima, average, minima = load_arrays_from_csv("similarity_array_lineplot.csv")
+maxima, average, minima = load_arrays_from_csv("data/similarity_array_lineplot.csv")
 x_labels = list(range(1, len(maxima) + 1))
 
 plt.plot(x_labels, maxima, label='Max', marker='o', linestyle="--", color="blue")
@@ -38,4 +38,4 @@ plt.xticks(x_labels)
 plt.show()
 
 
-plt.savefig('similarity_heatmap.png')
+plt.savefig('data/similarity_heatmap.png')

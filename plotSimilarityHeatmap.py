@@ -10,7 +10,7 @@ grayscale = True
 cmap = 'gray' if grayscale else 'viridis'
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('similarity_array.csv')
+df = pd.read_csv('data/similarity_array.csv')
 
 # Convert the DataFrame to a NumPy array
 data = df.values
@@ -27,4 +27,4 @@ plt.show()
 #plt.savefig()
 
 fig = sns_plot.get_figure()
-fig.savefig('similarity_heatmap.png')
+fig.savefig('data/similarity_heatmap.png')
